@@ -37,7 +37,7 @@ Add screenshots in a folder like:
 
 ## Incident Report
 A short incident report is included in:
-- `incident-report/incident-report.md`
+- incident-report/failed-login-incident.md
 
 ## Skills Demonstrated
 - SIEM deployment (Wazuh)
