@@ -46,7 +46,7 @@ Host Machine (Windows 11)
 ## Evidence (Screenshots)
 
 ### Active Agent
-![Active Agent](Screenshots/agents-active.png)
+![Active Agent](Screenshots/agent-active.png)
 
 ### Failed Login Alerts (Event ID 4625)
 ![Failed Login Alerts](Screenshots/failed-login-4625.png)
