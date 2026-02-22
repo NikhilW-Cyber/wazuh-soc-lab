@@ -46,13 +46,13 @@ Host Machine (Windows 11)
 ## Evidence (Screenshots)
 
 ### Active Agent
-![Active Agent](screenshots/agents-active.png)
+![Active Agent](Screenshots/agents-active.png)
 
 ### Failed Login Alerts (Event ID 4625)
-![Failed Login Alerts](screenshots/failed-login-4625.png)
+![Failed Login Alerts](Screenshots/failed-login-4625.png)
 
 ### Wazuh Rule – Logon Failure
-![Rule 60105](screenshots/rule-60105.png)
+![Rule 60105](Screenshots/rule-60105.png)
 
 ## Incident Report
 A short incident report is included in:
