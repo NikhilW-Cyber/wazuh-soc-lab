@@ -1,4 +1,5 @@
 # Wazuh Home SOC Lab (Beginner Project)
+A hands-on beginner SOC lab simulating authentication attack detection using Wazuh SIEM.
 
 ## Overview
 This project documents my beginner Security Operations Center (SOC) lab built using **Wazuh SIEM** on **Kali Linux** and a **Windows 10** endpoint inside VirtualBox. The goal was to practice SIEM deployment, endpoint onboarding, alert triage, and basic incident reporting.
@@ -30,20 +31,41 @@ This project documents my beginner Security Operations Center (SOC) lab built us
   - Number of attempts
   - Rule description
 
+     ## Lab Architecture
+
+Host Machine (Windows 11)
+│
+├── Kali Linux (Wazuh Server)
+│     ├── Wazuh Manager
+│     ├── Wazuh Indexer
+│     └── Wazuh Dashboard
+│
+└── Windows 10 Endpoint
+      └── Wazuh Agent
+
 ## Evidence (Screenshots)
-Add screenshots in a folder like:
-- `screenshots/agents-active.png`
-- `screenshots/failed-logins-4625.png`
+
+### Active Agent
+![Active Agent](screenshots/agents-active.png)
+
+### Failed Login Alerts (Event ID 4625)
+![Failed Login Alerts](screenshots/failed-login-4625.png)
+
+### Wazuh Rule – Logon Failure
+![Rule 60105](screenshots/rule-60105.png)
 
 ## Incident Report
 A short incident report is included in:
 - incident-report/failed-login-incident.md
 
 ## Skills Demonstrated
-- SIEM deployment (Wazuh)
-- Endpoint onboarding and troubleshooting
-- Log filtering and investigation
-- Alert triage and basic incident reporting
+
+- SIEM deployment and configuration (Wazuh)
+- Endpoint agent onboarding and troubleshooting
+- Windows Event Log analysis (Event ID 4625)
+- Alert triage and investigation workflow
+- Basic incident documentation
+- MITRE ATT&CK mapping (T1110 – Brute Force)
 
 ## Next Improvements
 - Add Sysmon for richer Windows telemetry
