@@ -50,3 +50,11 @@ A short incident report is included in:
 - Create custom detection rules
 - Add dashboards for authentication monitoring
 - Map detections to MITRE ATT&CK
+- ## MITRE ATT&CK Mapping
+
+The failed login activity maps to:
+
+- Technique: T1110 – Brute Force
+- Tactic: Credential Access
+
+Although the test activity originated locally, similar behavior from a remote IP would indicate potential brute-force attempts.
